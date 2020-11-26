@@ -1,52 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <meta name="author" content="MarcoCarpo" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <meta name="robots" content="index,follow" />
 
-  Our Pricing
-  Annually
-  Monthly
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main>
+      <section class="pricing-switch">
+        <h1 class="pricing">Our Pricing</h1>
+        <div class="ann-mon">
+          <p>Annually</p>
+          <div class="switch-container">
+            <div class="switch"></div>
+          </div>
+          <p>Monthly</p>
+        </div>
+      </section>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+      <!-- options (Annually as default) -->
+      <section class="pricing-options pricing-annually">
+        <!-- Basic Annually options -->
+        <div class="pricing-option pricing-basic">
+          <h2 class="title">Basic</h2>
+          <p class="price"><span class="dollar">&dollar;</span>199.99</p>
+          <div class="features">
+            <p class="storage">500 GB Storage</p>
+            <p class="n-users">2 Users Allowed</p>
+            <p class="send">Send uo to 3 GB</p>
+          </div>
+          <button class="purple">LEARN MORE</button>
+        </div>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <!-- Professional Annually options -->
+        <div class="pricing-option pricing-professional">
+          <h2 class="title">Professional</h2>
+          <p class="price"><span class="dollar">&dollar;</span>249.99</p>
+          <div class="features">
+            <p class="storage">1 TB Storage</p>
+            <p class="n-users">5 Users Allowed</p>
+            <p class="send">Send uo to 10 GB</p>
+          </div>
+          <button class="white">LEARN MORE</button>
+        </div>
+
+        <!-- Master Annually options -->
+        <div class="pricing-option pricing-master">
+          <h2 class="title">Basic</h2>
+          <p class="price"><span class="dollar">&dollar;</span>199.99</p>
+          <div class="features">
+            <p class="storage">2 TB Storage</p>
+            <p class="n-users">10 Users Allowed</p>
+            <p class="send">Send uo to 20 GB</p>
+          </div>
+          <button class="purple">LEARN MORE</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./assets/scripts/app.js"></script>
+  </body>
 </html>

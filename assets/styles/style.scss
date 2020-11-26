@@ -1,5 +1,21 @@
+// Variables
 
+$background-color: hsl(240, 78%, 98%);
+$ann-mon-color: hsl(234, 14%, 74%);
+$price-color: hsl(232, 13%, 33%);
+$gray-features-color: hsl(233, 13%, 49%);
+$purple: hsl(236, 72%, 79%);
 
+$gradient-purple: linearGradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+
+// Helper mixins
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
 
 @import "global";
 @import "page";

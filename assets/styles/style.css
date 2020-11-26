@@ -7,5 +7,64 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.105em;
+}
+
+main {
+  height: 100vh;
+  background: #f6f6fe;
+}
+
+.ann-mon {
+  color: #b3b5c6;
+}
+
+.pricing,
+.features {
+  color: #6d708d;
+}
+
+.pricing-professional .features {
+  color: #f6f6fe;
+}
+
+.purple {
+  background: #a3a8f0;
+  color: white;
+}
+
+.white {
+  background: white;
+  color: #a3a8f0;
 }
 /*# sourceMappingURL=style.css.map */
