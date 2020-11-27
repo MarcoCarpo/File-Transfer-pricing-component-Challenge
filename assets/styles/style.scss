@@ -6,7 +6,11 @@ $price-color: hsl(232, 13%, 33%);
 $gray-features-color: hsl(233, 13%, 49%);
 $purple: hsl(236, 72%, 79%);
 
-$gradient-purple: linearGradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$gradient-purple: linear-gradient(
+  180deg,
+  hsl(236, 72%, 79%),
+  hsl(237, 63%, 64%)
+);
 
 // Helper mixins
 

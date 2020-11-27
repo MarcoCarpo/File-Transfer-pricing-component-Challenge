@@ -1,6 +1,7 @@
 main {
   height: 100vh;
   background: $background-color;
+  @include flex(column, center, center);
 }
 
 .ann-mon {
@@ -16,12 +17,103 @@ main {
   color: $background-color;
 }
 
-.purple {
-  background: $purple;
-  color: white;
-}
-
 .white {
   background: white;
   color: $purple;
+}
+
+.pricing-switch {
+  @include flex(column, center, center);
+}
+
+.pricing {
+  margin-bottom: 3rem;
+}
+
+.ann-mon {
+  @include flex(row, center, center);
+
+  p {
+    padding: 0 2.5rem;
+  }
+}
+
+.switch-container {
+  background: $gradient-purple;
+  height: 140%;
+  width: 5rem;
+  border-radius: 3rem;
+  @include flex(row, flex-start, center);
+}
+
+.switch {
+  height: 100%;
+  width: 50%;
+  background: white;
+  border-radius: 3rem;
+  transform: scale(0.75);
+}
+
+.pricing-options {
+  @include flex(row, center, center);
+}
+
+.pricing-option-container {
+  border-radius: 1rem;
+  background: $gradient-purple;
+  text-align: center;
+  box-shadow: 0rem 1rem 1.5rem rgba(39, 15, 82, 0.041);
+}
+
+.pricing-option {
+  padding: 3rem;
+}
+
+.price {
+  font-size: 7.2rem;
+  color: $price-color;
+}
+
+.pricing-basic,
+.pricing-master {
+  background: white;
+}
+
+.pricing-basic {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.pricing-master {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.pricing-professional .title {
+  margin: 2.5rem;
+}
+
+.features {
+  padding: 3rem 0;
+}
+
+.features p {
+  border-top: 1px solid hsla(234, 14%, 74%, 0.329);
+  padding: 1.5rem 0;
+}
+
+.send {
+  border-bottom: 1px solid hsla(234, 14%, 74%, 0.329);
+}
+
+.pricing-option button {
+
+  letter-spacing: 0.3rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.purple {
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
 }

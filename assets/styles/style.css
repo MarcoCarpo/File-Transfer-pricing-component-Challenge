@@ -43,6 +43,19 @@ button {
 main {
   height: 100vh;
   background: #f6f6fe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .ann-mon {
@@ -58,13 +71,155 @@ main {
   color: #f6f6fe;
 }
 
-.purple {
-  background: #a3a8f0;
-  color: white;
-}
-
 .white {
   background: white;
   color: #a3a8f0;
+}
+
+.pricing-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing {
+  margin-bottom: 3rem;
+}
+
+.ann-mon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ann-mon p {
+  padding: 0 2.5rem;
+}
+
+.switch-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(180deg, #a3a8f0, #696fdd);
+  height: 140%;
+  width: 5rem;
+  border-radius: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.switch {
+  height: 100%;
+  width: 50%;
+  background: white;
+  border-radius: 3rem;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+
+.pricing-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-option-container {
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(180deg, #a3a8f0, #696fdd);
+  text-align: center;
+  -webkit-box-shadow: 0rem 1rem 1.5rem rgba(39, 15, 82, 0.041);
+          box-shadow: 0rem 1rem 1.5rem rgba(39, 15, 82, 0.041);
+}
+
+.pricing-option {
+  padding: 3rem;
+}
+
+.price {
+  font-size: 7.2rem;
+  color: #494c5f;
+}
+
+.pricing-basic,
+.pricing-master {
+  background: white;
+}
+
+.pricing-basic {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.pricing-master {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.pricing-professional .title {
+  margin: 2.5rem;
+}
+
+.features {
+  padding: 3rem 0;
+}
+
+.features p {
+  border-top: 1px solid rgba(179, 181, 198, 0.329);
+  padding: 1.5rem 0;
+}
+
+.send {
+  border-bottom: 1px solid rgba(179, 181, 198, 0.329);
+}
+
+.pricing-option button {
+  letter-spacing: 0.3rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.purple {
+  background: linear-gradient(120deg, #a3a8f0, #696fdd);
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
