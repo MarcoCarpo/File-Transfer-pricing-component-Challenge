@@ -11,21 +11,6 @@ html {
   font-weight: 700;
 }
 
-.attribution {
-  padding: 1rem 0;
-  font-size: 1.1rem;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.attribution a {
-  color: #3e52a3;
-}
-
 h1 {
   font-size: 3.2rem;
 }
@@ -46,6 +31,21 @@ button {
   letter-spacing: 0.105em;
 }
 
+.attribution {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 #bg-down {
   position: absolute;
   bottom: 0;
@@ -59,7 +59,7 @@ button {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   background: #f6f6fe;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +140,7 @@ main {
   cursor: pointer;
   background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(180deg, #a3a8f0, #696fdd);
-  height: 140%;
+  height: 2.5rem;
   width: 5rem;
   border-radius: 3rem;
   display: -webkit-box;
@@ -192,17 +192,11 @@ main {
 }
 
 .pricing-option-container {
-  border-radius: 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
   background: linear-gradient(180deg, #a3a8f0, #696fdd);
   text-align: center;
   -webkit-box-shadow: 0rem 1rem 1.5rem 0.3rem rgba(24, 9, 51, 0.068);
           box-shadow: 0rem 1rem 1.5rem 0.3rem rgba(24, 9, 51, 0.068);
-}
-
-.professional {
-  position: relative;
-  z-index: 1;
 }
 
 .pricing-option {
@@ -215,40 +209,45 @@ main {
   color: #494c5f;
 }
 
-.pricing-basic,
-.pricing-master {
+.basic,
+.master {
   background: white;
 }
 
-.pricing-basic {
+.basic {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 
-.pricing-master {
+.master {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 
-.pricing-basic .title,
-.pricing-master .title {
+.basic .title,
+.master .title {
   color: #6d708d;
 }
 
-.pricing-professional {
-  padding: 6rem 3rem;
+.professional {
+  border-radius: 1rem;
+  padding: 3rem 3rem;
 }
 
-.pricing-professional .title {
+.professional .title {
   color: white;
 }
 
-.pricing-basic .price,
-.pricing-master .price {
+.basic .price,
+.master .price {
   color: #494c5f;
 }
 
-.pricing-professional .price {
+.professional .price {
+  color: white;
+}
+
+.professional .features {
   color: white;
 }
 
@@ -288,5 +287,49 @@ main {
 .white:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (max-width: 1140px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  body {
+    position: relative;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .pricing-switch {
+    margin-top: 5rem;
+  }
+  .pricing-options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pricing-options {
+    gap: 4rem;
+    margin-bottom: 8rem;
+  }
+  .pricing-option-container {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .professional {
+    padding: 0rem;
+  }
+  .attribution {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
