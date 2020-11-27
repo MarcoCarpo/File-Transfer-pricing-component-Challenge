@@ -1,7 +1,20 @@
+#bg-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#bg-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 main {
   height: 100vh;
   background: $background-color;
   @include flex(column, center, center);
+  gap: 6rem;
 }
 
 .ann-mon {
@@ -23,6 +36,7 @@ main {
 }
 
 .pricing-switch {
+  z-index: 1;
   @include flex(column, center, center);
 }
 
@@ -39,11 +53,17 @@ main {
 }
 
 .switch-container {
+  cursor: pointer;
   background: $gradient-purple;
   height: 140%;
   width: 5rem;
   border-radius: 3rem;
   @include flex(row, flex-start, center);
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .switch {
@@ -55,6 +75,7 @@ main {
 }
 
 .pricing-options {
+  z-index: 1;
   @include flex(row, center, center);
 }
 
@@ -62,7 +83,12 @@ main {
   border-radius: 1rem;
   background: $gradient-purple;
   text-align: center;
-  box-shadow: 0rem 1rem 1.5rem rgba(39, 15, 82, 0.041);
+  box-shadow: 0rem 1rem 1.5rem 0.3rem rgba(24, 9, 51, 0.068);
+}
+
+.professional {
+  position: relative;
+  z-index: 1;
 }
 
 .pricing-option {
@@ -70,6 +96,7 @@ main {
 }
 
 .price {
+  margin-top: 2rem;
   font-size: 7.2rem;
   color: $price-color;
 }
@@ -89,8 +116,26 @@ main {
   border-bottom-right-radius: 1rem;
 }
 
+.pricing-basic .title,
+.pricing-master .title {
+  color: $gray-features-color;
+}
+
+.pricing-professional {
+  padding: 6rem 3rem;
+}
+
 .pricing-professional .title {
-  margin: 2.5rem;
+  color: white;
+}
+
+.pricing-basic .price,
+.pricing-master .price {
+  color: $price-color;
+}
+
+.pricing-professional .price {
+  color: white;
 }
 
 .features {
@@ -107,13 +152,24 @@ main {
 }
 
 .pricing-option button {
-
   letter-spacing: 0.3rem;
   width: 100%;
   padding: 1rem 0;
 }
 
+.purple,
+.white {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
 .purple {
+  font-weight: 900;
   background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
+}
+
+.purple:hover,
+.white:hover {
+  transform: scale(1.1);
 }
