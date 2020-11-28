@@ -43,11 +43,6 @@ main {
   color: $background-color;
 }
 
-.white {
-  background: white;
-  color: $purple;
-}
-
 .pricing-switch {
   z-index: 1;
   @include flex(column, center, center);
@@ -70,20 +65,19 @@ main {
   background: $gradient-purple;
   height: 2.5rem;
   width: 5rem;
-  border-radius: 3rem;
-  @include flex(row, flex-start, center);
-  transition: 0.2s;
-
-  &:hover {
-    transform: scale(1.1);
-  }
+  border-radius: 4rem;
+  position: relative;
+  transition: 0.5s;
 }
 
 .switch {
+  transition: 0.2s;
+  position: absolute;
+  left: 0;
   height: 100%;
   width: 50%;
   background: white;
-  border-radius: 3rem;
+  border-radius: 4rem;
   transform: scale(0.75);
 }
 
@@ -106,6 +100,11 @@ main {
   margin-top: 2rem;
   font-size: 7.2rem;
   color: $price-color;
+  @include flex(row, center, center);
+}
+
+.dollar {
+  font-size: 3.6rem;
 }
 
 .basic,
@@ -172,16 +171,29 @@ main {
 .purple,
 .white {
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.1s ease-out;
 }
 
 .purple {
-  font-weight: 900;
   background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color: white;
+  box-shadow: 0 0 0 1px transparent;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $purple;
+    color: $purple;
+    background: white;
+  }
 }
 
-.purple:hover,
-.white:hover {
-  transform: scale(1.1);
+.white {
+  background: white;
+  color: $purple;
+  box-shadow: 0 0 0 1px transparent;
+
+  &:hover {
+    color: white;
+    background: transparent;
+    box-shadow: 0 0 0 1px white;
+  }
 }

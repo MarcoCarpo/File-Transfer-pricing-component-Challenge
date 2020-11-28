@@ -1,0 +1,20 @@
+.switch-montly {
+  background: #d2d5ff;
+}
+
+.switch-montly .switch {
+  left: 50%;
+}
+
+.dissolve {
+  animation: dissolve_anim 0.3s ease-in-out alternate-reverse;
+}
+
+@keyframes dissolve_anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
