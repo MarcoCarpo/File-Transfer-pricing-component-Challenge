@@ -87,6 +87,7 @@ main {
 }
 
 .pricing-option-container {
+  min-width: 33rem;
   background: $gradient-purple;
   text-align: center;
   box-shadow: 0rem 1rem 1.5rem 0.3rem rgba(24, 9, 51, 0.068);
@@ -128,6 +129,7 @@ main {
 }
 
 .professional {
+  min-width: 39rem;
   border-radius: 1rem;
   padding: 3rem 3rem;
 }
